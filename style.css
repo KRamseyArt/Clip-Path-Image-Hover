@@ -9,13 +9,20 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #111;
+    background: #ff5500;
 }
-
+.gallery{
+    width:720px;
+}
+h2{
+    color: white;
+    margin-bottom: 25px;
+}
 .container {
     position: relative;
-    width: 600px;
-    height: 400px;
+    display: inline-flex;
+    min-width: 30%;
+    height: 150px;
     border: 4px solid #fff;
 }
 
@@ -25,9 +32,43 @@ body {
     height: 100%;
 }
 
-.container .box:nth-child(1){
-    background: url(https://via.placeholder.com/600x400/0000ff/000088?text=Image1);
+.gallery #box1 .box:nth-child(1){
+    background: url(https://via.placeholder.com/200x150/0000ff/fff?text=Image1);
 }
+.gallery #box1 .box:nth-child(2){
+    background: url(https://via.placeholder.com/200x150/5500ff/fff?text=Image1);
+}
+.gallery #box2 .box:nth-child(1){
+    background: url(https://via.placeholder.com/200x150/ff0000/fff?text=Image2);
+}
+.gallery #box2 .box:nth-child(2){
+    background: url(https://via.placeholder.com/200x150/ff5500/fff?text=Image2);
+}
+.gallery #box3 .box:nth-child(1){
+    background: url(https://via.placeholder.com/200x150/00ff00/fff?text=Image3);
+}
+.gallery #box3 .box:nth-child(2){
+    background: url(https://via.placeholder.com/200x150/55ff00/fff?text=Image3);
+}
+.gallery #box4 .box:nth-child(1){
+    background: url(https://via.placeholder.com/200x150/ff00ff/fff?text=Image4);
+}
+.gallery #box4 .box:nth-child(2){
+    background: url(https://via.placeholder.com/200x150/00ffff/fff?text=Image4);
+}
+.gallery #box5 .box:nth-child(1){
+    background: url(https://via.placeholder.com/200x150/ffff00/000?text=Image5);
+}
+.gallery #box5 .box:nth-child(2){
+    background: url(https://via.placeholder.com/200x150/00ff00/fff?text=Image5);
+}
+.gallery #box6 .box:nth-child(1){
+    background: url(https://via.placeholder.com/200x150/5555ff/fff?text=Image6);
+}
+.gallery #box6 .box:nth-child(2){
+    background: url(https://via.placeholder.com/200x150/ff5555/fff?text=Image6);
+}
+
 .container .box:nth-child(1):hover ~ .box:nth-child(2){
     transition: 1.5s;
     transition-timing-function: cubic-bezier(.3, .01, 0, 1.01);
@@ -35,7 +76,6 @@ body {
 }
 
 .container .box:nth-child(2){
-    background: url(https://via.placeholder.com/600x400/5500ff/330088?text=Image2);
     z-index: 2;
     transition: 0.5s;
     clip-path: polygon(0 0, 100% 0, 0 100%, 0% 100%);
@@ -44,4 +84,13 @@ body {
     transition: 1.5s;
     transition-timing-function: cubic-bezier(.3, .01, 0, 1.01);
     clip-path: polygon(0 0, 90% 0, 90% 100%, 0% 100%);
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    height: 35 px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background: white;
 }
